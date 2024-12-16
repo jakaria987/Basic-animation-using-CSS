@@ -1,0 +1,102 @@
+.bounce {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  position: relative;
+  animation: jak 2s infinite ease-in-out;
+}
+
+@keyframes jak {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 300px;
+    left: 0;
+    background-color: #36fa95;
+    border-radius: 50%;
+  }
+  50% {
+    top: 300px;
+    left: 300px;
+    background-color: #fcfc21;
+    border-radius: 0;
+  }
+  75% {
+    top: 0;
+    left: 300px;
+    background-color: #c70ab1;
+    border-radius: 50%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+.rotate {
+  width: 100px;
+  height: 100px;
+  background-color: #e74c3c;
+  animation: rotation 2s infinite ease-in-out;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+    margin-top: 150px;
+    background-color: #3498db;
+    border-radius: 50%;
+  }
+  25% {
+    transform: rotate(90deg);
+    margin-top: 150px;
+    background-color: #36fa95;
+    border-radius: 0;
+  }
+  50% {
+    transform: rotate(180deg);
+    margin-top: 150px;
+    background-color: #fcfc21;
+    border-radius: 50%;
+  }
+  75% {
+    transform: rotate(240deg);
+    margin-top: 150px;
+    background-color: #c70ab1;
+    border-radius: 0;
+  }
+  100% {
+    transform: rotate(360deg);
+    margin-top: 150px;
+    background-color: #3498db;
+    border-radius: 50%;
+  }
+}
+.fade {
+  width: 100px;
+  height: 100px;
+  background-color: #2ecc71;
+  animation: jakaria 3s infinite ease-in-out;
+}
+
+@keyframes jakaria {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 1;
+    border-radius: 50%;
+  }
+  66% {
+    opacity: 0;
+  }
+  99% {
+    opacity: 1;
+    border-radius: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
